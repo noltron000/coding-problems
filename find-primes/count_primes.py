@@ -1,14 +1,13 @@
-print("Input number")
-n = input()
+n = input('Input number')
 
-# Determine if the input number is prime
-def isPrime(n):
-	for current_number in range(2,n):
-		# if the input number is evenly divisible by the current number?
+# determine if the input number, "n", is prime.
+def is_prime(n):
+	for current_number in range(2, n):
+		# is "n" evenly divisible by the current number?
 		if n % current_number == 0:
 			return False
 	return True
 
-# Determine how many prime numbers are UNDER the input number
-def countPrimes(n):
+# determine how many prime numbers less than "n" exist.
+def count_primes(n):
 	pass
