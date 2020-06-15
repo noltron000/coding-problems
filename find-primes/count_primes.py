@@ -8,7 +8,12 @@ def is_prime(n):
 
 # determine how many prime numbers less than "n" exist.
 def count_primes(n):
-	pass
+	count = 0
+	for current_number in range(2, n):
+		result = is_prime(current_number)
+		if result:
+			count += 1
+	return count
 
 if __name__ == '__main__':
 	n = input('Input number')
