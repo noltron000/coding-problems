@@ -16,4 +16,6 @@ def count_primes(n):
 	return count
 
 if __name__ == '__main__':
-	n = input('Input number')
+	n = int(input('Input number'))
+	num_primes = count_primes(n)
+	print(num_primes)
